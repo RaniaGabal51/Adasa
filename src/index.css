@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-tajawal: "Tajawal", system-ui, -apple-system, sans-serif;
+  --color-background: #0a0a0a;
+  --color-card: #161616;
+  --color-primary: #f97316;
+  --color-secondary: #f3a900;
+  --color-tertiary: #ff5418;
+  --color-subtext: #a1a1a1;
+}
+
+body {
+  background: #0a0a0a;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.active {
+  background: linear-gradient(to right, #f97316, #ea580c);
+  color: white;
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(38, 38, 38, 0.5) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(38, 38, 38, 0.5) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  color: var(--color-primary);
+  background: rgb(255 105 0 / 10%);
+  border: 1px solid rgb(255 105 0 / 30%);
+}
+
+.hero-glow-left {
+  position: absolute;
+  top: 5rem;
+  left: 2.5rem;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 9999px;
+  filter: blur(64px);
+  background-color: #211209;
+}
+
+.hero-glow-right {
+  position: absolute;
+  bottom: 5rem;
+  right: 2.5rem;
+  width: 24rem;
+  height: 24rem;
+  border-radius: 9999px;
+  filter: blur(64px);
+  background-color: #1a130a;
+}
+
+.hero-badge::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: var(--color-primary);
+  animation: pulse 2s infinite;
+}
+
+.highlight-text {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(135deg, var(--color-primary), #fbbf24);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.glass-card {
+  border-radius: 25px;
+  -webkit-backdrop-filter: blur(20px);
+  background: #161514;
+  border: 1px solid #262626;
+}
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #161616;
+  border: 1px solid #262626;
+  border-radius: 12px;
+  color: #737373;
+  transition: all 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #fff;
+  border-color: transparent;
+  background: linear-gradient(135deg, var(--color-primary), #ea580c);
+  transform: scale(1.1);
+}
