@@ -1,16 +1,147 @@
-# React + Vite
+# Adasa 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern photography blog built with **React.js**, **Vite**, and **Tailwind CSS**.  
+The project provides an elegant reading experience with featured articles, category filtering, article details, and responsive layouts inspired by modern editorial websites.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 https://adasa-front9.vercel.app/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Responsive design for all screen sizes
+- Modern RTL interface
+- Featured articles section
+- Latest articles section
+- Category filtering
+- Article search
+- Article details page
+- Pagination
+- About page
+- Privacy Policy & Terms of Service pages
+- Newsletter subscription UI
+- Reusable layouts and components
+- 404 Not Found page
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+- React.js
+- Vite
+- React Router DOM
+- Tailwind CSS v4
+- Font Awesome
+
+---
+
+## Project Structure
+
+```text
+src
+├── assets
+├── components
+│   ├── AllArticles
+│   ├── ArticleCard
+│   ├── ArticleFilter
+│   ├── CategorySection
+│   ├── FeaturedArticles
+│   ├── Footer
+│   ├── Hero
+│   ├── LatestArticles
+│   ├── Layout
+│   ├── LegalLayout
+│   ├── Navbar
+│   ├── OurTeam
+│   ├── OurValues
+│   └── SubscribeSection
+├── data
+│   └── posts.json
+├── pages
+│   ├── Home
+│   ├── Blog
+│   ├── About
+│   ├── Privacy
+│   ├── Terms
+│   └── Notfound
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
+```
+
+---
+
+## Pages
+
+- Home
+- Blog
+- Article Details
+- About
+- Privacy Policy
+- Terms of Service
+- 404 Not Found
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/your-username/adasa.git
+
+cd adasa
+
+npm install
+
+npm run dev
+```
+
+---
+
+## Build
+
+```bash
+npm run build
+```
+
+---
+
+## Design Highlights
+
+- Dark modern UI
+- Glassmorphism-inspired elements
+- Gradient accents
+- Smooth hover animations
+- Sticky navigation
+- Responsive grid layouts
+- Reusable Hero layout
+- Reusable Legal pages layout
+
+---
+
+## Data
+
+The blog content is currently loaded from a local JSON file (`posts.json`), making it easy to replace with a backend or CMS in the future.
+
+---
+
+## Future Improvements
+
+- Connect to a real backend
+- Authentication
+- Comments system
+- Save favorite articles
+- Dark / Light mode
+- Newsletter integration
+- Search through URL parameters
+
+---
+
+## Author
+
+**Rania Gabal**
+
+- LinkedIn: https://www.linkedin.com/in/rania-gabal/
+- GitHub: https://github.com/RaniaGabal51
